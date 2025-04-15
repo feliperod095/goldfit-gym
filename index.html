@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for responsive layout and SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to GoldFit – your local fitness hub for training and nutrition." />
+
+  <!-- Page title -->
+  <title>GoldFit Gym | Home</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Font for headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header with site name and navigation -->
+  <header>
+    <h1><span class="gold">Gold</span><span class="fit">Fit</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-translate="navHome">Home</a></li>
+        <li><a href="services.html" data-translate="navServices">Services</a></li>
+        <li><a href="contact.html" data-translate="navContact">Contact</a></li>
+      </ul>
+    </nav>
+   
+<!-- transation buttons -->
+    <div class="language-buttons"> 
+      <button onclick="translatePage('en')">EN</button>
+      <button onclick="translatePage('pt')">PT</button>
+      <button onclick="translatePage('es')">ES</button>
+      <button onclick="translatePage('de')">DE</button>
+    </div>
+  </header>
+
+  <!-- Main section with welcome message -->
+  <main>
+    <section class="intro-section">
+      <h2 data-translate="homeWelcomeTitle">Welcome to GoldFit Gym</h2>
+      <div class="intro-content">
+        <!-- Box with intro text -->
+        <div class="info-box">
+          <p data-translate="homeWelcomeParagraph">Your journey to health and strength begins here. We offer personalized training plans, nutritional guidance, and a supportive community.</p>
+        </div>
+        <!-- Hero image -->
+        <img src="images/gym_main.jpg" alt="Gym members training together" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy; <span id="year"></span> Felipe</p>
+  </footer>
+
+  <!-- JavaScript file for functionality -->
+  <script src="js/script.js"></script>
+</body>
+</html>

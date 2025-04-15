@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata for character encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore GoldFit's training plans and nutrition programs." />
+
+  <!-- Page Title -->
+  <title>GoldFit Gym | Services</title>
+
+  <!-- Linking external CSS file and Google Fonts -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========================== -->
+  <!-- Header: Logo, Navigation, and Language Buttons -->
+  <!-- ========================== -->
+  <header>
+    <h1><span class="gold">Gold</span><span class="fit">Fit</span></h1>
+
+    <!-- Navigation menu linking to all pages -->
+    <nav>
+      <ul>
+        <li><a href="index.html" data-translate="navHome">Home</a></li>
+        <li><a href="services.html" data-translate="navServices">Services</a></li>
+        <li><a href="contact.html" data-translate="navContact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Buttons to change website language -->
+    <div class="language-buttons">
+        <button onclick="translatePage('en')">EN</button>
+        <button onclick="translatePage('pt')">PT</button>
+        <button onclick="translatePage('es')">ES</button>
+        <button onclick="translatePage('de')">DE</button>
+    </div>
+  </header>
+
+  <!-- ========================== -->
+  <!-- Main Content: Services Heading and Filter Buttons -->
+  <!-- ========================== -->
+  <main>
+    <!-- Section Title -->
+    <h2 data-translate="ourServices">Our Services</h2>
+
+    <!-- Filter buttons to show/hide training or nutrition services -->
+    <div class="filter-buttons">
+      <button onclick="filterServices('all')" data-translate="all">All</button>
+      <button onclick="filterServices('training')" data-translate="training">Training</button>
+      <button onclick="filterServices('nutrition')" data-translate="nutrition">Nutrition</button>
+    </div>
+    
+    <!-- ========================== -->
+    <!-- Services Grid: Training and Nutrition Cards -->
+    <!-- ========================== -->
+    <section class="services-grid">
+
+      <!-- Training Service Card 1 -->
+      <article class="service-card training">
+        <img src="images/training_plan.jpg" alt="Personalized training plans" />
+        <h3 data-translate="personalTraining">Personal Training</h3>
+        <p data-translate="personalTrainingDesc">Custom workouts designed for your goals and level, guided by professionals.</p>
+      </article>
+
+      <!-- Nutrition Service Card -->
+      <article class="service-card nutrition">
+        <img src="images/nutrition_tips.jpg" alt="Healthy nutrition advice" />
+        <h3 data-translate="nutritionCoaching">Nutrition Coaching</h3>
+        <p data-translate="nutritionCoachingDesc">Meal plans and tips to support your training and boost recovery.</p>
+      </article>
+
+      <!-- Training Service Card 2 -->
+      <article class="service-card training">
+        <img src="images/personal_trainer.jpg" alt="Certified personal trainer" />
+        <h3 data-translate="coaching">1-on-1 Coaching</h3>
+        <p data-translate="coachingDesc">Work closely with a certified coach to achieve real, lasting results.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ========================== -->
+  <!-- Footer with Dynamic Year -->
+  <!-- ========================== -->
+  <footer>
+    <p>&copy; <span id="year"></span> Felipe</p>
+  </footer>
+
+  <!-- ========================== -->
+  <!-- JavaScript File for Interactivity and Translation -->
+  <!-- ========================== -->
+  <script src="js/script.js"></script>
+</body>
+</html>

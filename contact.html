@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata for character encoding, responsiveness, and SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact GoldFit Gym for membership or training inquiries." />
+
+  <!-- Page Title -->
+  <title>GoldFit Gym | Contact</title>
+
+  <!-- Link to external CSS and Google Font -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========================== -->
+  <!-- Header: Branding, Navigation, and Language Options -->
+  <!-- ========================== -->
+  <header>
+    <h1><span class="gold">Gold</span><span class="fit">Fit</span></h1>
+
+    <!-- Navigation links -->
+    <nav>
+      <ul>
+        <li><a href="index.html" data-translate="navHome">Home</a></li>
+        <li><a href="services.html" data-translate="navServices">Services</a></li>
+        <li><a href="contact.html" data-translate="navContact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Language selector buttons -->
+    <div class="language-buttons">
+      <button onclick="translatePage('en')">EN</button>
+      <button onclick="translatePage('pt')">PT</button>
+      <button onclick="translatePage('es')">ES</button>
+      <button onclick="translatePage('de')">DE</button>
+    </div>
+  </header>
+
+  <!-- ========================== -->
+  <!-- Main Section: Contact Form -->
+  <!-- ========================== -->
+  <main>
+    <section>
+      <!-- Section heading -->
+      <h2 data-translate="contactTitle">Get in Touch</h2>
+
+      <!-- Introductory text -->
+      <div class="info-box">
+        <p data-translate="contactPageParagraph">
+          We’d love to hear from you. Whether you have a question or need assistance, our team is here to help.
+        </p>
+      </div>
+
+      <!-- ========================== -->
+      <!-- Contact Form -->
+      <!-- ========================== -->
+      <form id="contactForm" class="contact-form">
+        
+        <!-- Name input field -->
+        <div class="form-group">
+          <label for="name" data-translate="contactName">Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+        </div>
+
+        <!-- Email input field -->
+        <div class="form-group">
+          <label for="email" data-translate="contactEmail">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </div>
+
+        <!-- Message textarea -->
+        <div class="form-group">
+          <label for="message" data-translate="contactMessage">Message</label>
+          <textarea id="message" rows="5" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="button" onclick="submitForm()" data-translate="sendButton">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ========================== -->
+  <!-- Footer with Dynamic Year -->
+  <!-- ========================== -->
+  <footer>
+    <p>&copy; <span id="year"></span> Felipe</p>
+  </footer>
+
+  <!-- ========================== -->
+  <!-- JavaScript for translation and form submission -->
+  <!-- ========================== -->
+  <script src="js/script.js"></script>
+
+  <!-- ========================== -->
+  <!-- Popup for Success Message -->
+  <!-- ========================== -->
+  <div id="successPopup" class="popup">
+    <div class="popup-content">
+      <p data-translate="formSuccess">✅ Message sent successfully! We’ll get back to you soon.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+</body>
+</html>
